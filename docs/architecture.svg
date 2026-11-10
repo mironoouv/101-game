@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="330" viewBox="0 0 880 330" role="img" aria-labelledby="title desc">
+  <title id="title">Архитектура покраски клетки</title>
+  <desc id="desc">Unity отправляет запрос локальным правилам или серверу. PixelBoard возвращает результат, который отображает PixelCanvas.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#93c5fd"/>
+    </marker>
+  </defs>
+  <rect width="880" height="330" rx="20" fill="#0f172a"/>
+  <g font-family="system-ui, sans-serif" fill="#f8fafc">
+    <text x="32" y="45" font-size="24" font-weight="700">Как закрашивается клетка</text>
+    <g fill="#1e293b" stroke="#64748b">
+      <rect x="32" y="105" width="218" height="104" rx="12"/>
+      <rect x="331" y="105" width="218" height="104" rx="12" stroke="#60a5fa"/>
+      <rect x="630" y="105" width="218" height="104" rx="12"/>
+    </g>
+    <g font-size="18" font-weight="700" text-anchor="middle">
+      <text x="141" y="139">Ввод Unity</text>
+      <text x="440" y="139">PixelBoard</text>
+      <text x="739" y="139">PixelCanvas</text>
+    </g>
+    <g font-size="14" text-anchor="middle" fill="#cbd5e1">
+      <text x="141" y="166">Курсор и палитра</text>
+      <text x="141" y="188">Координаты и цвет</text>
+      <text x="440" y="166">Правила на C#</text>
+      <text x="440" y="188">Клетки, заряды, таймеры</text>
+      <text x="739" y="166">Текстура и интерфейс</text>
+      <text x="739" y="188">Изменение или отказ</text>
+    </g>
+    <g font-size="13" text-anchor="middle" fill="#bfdbfe">
+      <text x="290" y="144">Запрос</text>
+      <text x="590" y="144">Результат</text>
+    </g>
+    <g stroke="#93c5fd" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M258 158H322"/>
+      <path d="M557 158H621"/>
+    </g>
+    <rect x="32" y="241" width="816" height="57" rx="12" fill="#172554"/>
+    <text x="440" y="275" text-anchor="middle" font-size="15">Одиночная игра: правила выполняются локально · Сетевая игра: на сервере</text>
+  </g>
+</svg>
